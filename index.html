@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <meta name="description" content="First assignment in WDD231. This is my Homepage">
+    <meta name="author" content="Bailey Jensen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/flower1.svg" alt="site logo" width="16" height="16">
+        <span>Bailey Lately</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About me</h2>
+            <p>My name is Bailey, I've been doing pathways for a while now. I've actually forgotten how long I've been
+                doing it. My
+                guess is about a year. I recently started a social media. My goal with it is 2 things. One is to hvae
+                fun. I enjoy making
+                videos. But then two, I'd love to make income from it. I'd love for it to replace my current job. So
+                when I have children,
+                I will be able to stay home and raise them. My youtube and instagram page have been linked. If you feel
+                so inclined, you can
+                follow to watch my journey!
+            </p>
+        </section>
+
+        <section class="student">
+            <h2>Student Photo</h2>
+            <img src="images/student.webp" alt="Student Photo" loading="lazy">
+        </section>
+
+        <section class="class">
+            <h2>Web Certificate Courses</h2>
+            <button class="all" id="all">All Classes</button>
+            <button class="wdd" id="wdd">WDD Classes</button>
+            <button class="cse" id="cse">CSE Classes</button>
+            <div id="courseList"></div>
+            <p id="totalCredits"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/BaileyJensen" target="_blank">
+                <img src="images/github.svg" alt="github" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="16" height="16">
+            </a>
+
+            <a href="https://www.youtube.com/@baileylately/videos" target="_blank">
+                <img src="images/youtube.svg" alt="youtube" width="16" height="16">
+            </a>
+
+            <a href="https://www.instagram.com/baileyylately?utm_source=qr" target="_blank">
+                <img src="images/instagram.svg" alt="instagram" width="16" height="16">
+            </a>
+        </div>
+
+        <p>© <span id="currentyear"></span> Bailey Jensen, USA</p>
+        <span id="lastModified"></span>
+
+    </footer>
+
+</body>
+
+</html>
