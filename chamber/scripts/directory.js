@@ -1,4 +1,4 @@
-const url = "https://baileyjensen.github.io/wdd231/chamber/data/prophets.json";
+const url = "https://baileyjensen.github.io/wdd231/chamber/data/directory.json";
 
 const cards = document.querySelector('#cards');
 
