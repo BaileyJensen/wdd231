@@ -1,0 +1,18 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+#cards section {
+    border: 5px solid burlywood;
+    gap: 20px;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+}
