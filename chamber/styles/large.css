@@ -1,0 +1,78 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    footer {
+
+        margin: 0 auto;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primary-color);
+
+
+    }
+
+    header span {
+        color: black;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 20px;
+
+    }
+
+    header nav {
+        margin-left: auto;
+    }
+
+
+
+
+
+
+    .hamburger {
+        display: none;
+
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+        color: black;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px;
+    }
+
+    .left {
+        grid-column: 1/2;
+    }
+
+    .social {
+        grid-column: 2/3;
+    }
+
+    .right {
+        grid-column: 3/4;
+    }
+
+
+}

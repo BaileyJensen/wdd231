@@ -1,4 +1,4 @@
-const url = "https://baileyjensen.github.io/wdd231/chamber/data/directory.json";
+const url = "data/members.json";
 
 const cards = document.querySelector('#cards');
 
@@ -27,17 +27,19 @@ const displayCompanies = (companies) => {
         phone.innerHTML = `<strong>Phone:</strong> ${company.phone}`;
         website.innerHTML = `<strong>Website:</strong> ${company.website}`
 
-        logo.setAttribute("src", company.imageurl);
+        logo.setAttribute("src", company.image);
         logo.setAttribute("alt", `Logo of ${company.name}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "340");
-        logo.setAttribute("height", "440");
+        logo.setAttribute("width", "200");
+        logo.setAttribute("height", "200");
 
+
+        card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(phone);
         card.appendChild(address);
         card.appendChild(website);
-        card.appendChild(logo);
+
 
         cards.appendChild(card);
 
