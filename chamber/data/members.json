@@ -39,6 +39,22 @@
             "website": "https://www.costavida.com/locations/us/ut/bluffdale/13847-s-redwood-rd/?utm_source=G&utm_medium=Local&utm_campaign=Google-Local",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vcRCV_-lkLKEYK2cKo0JJF_8JNFUvQvfgo2EKGiBnQ&s=10",
             "membership": 1
+        },
+        {
+            "name": "Marco's Pizza",
+            "address": "337 E Xrds Blvd, Saratoga Springs, UT 84045",
+            "phone": " (385) 484-8880",
+            "website": "marcos.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqvkRB5Fxi4yUocNguMMSiCTL4MA9LOzrewlyZt-tTg&s=10",
+            "membership": 2
+        },
+        {
+            "name": "Buffalo Wild Wings",
+            "address": "92 N 1200 E, Lehi, UT 84043",
+            "phone": "+(801) 766-8402",
+            "website": "buffalowildwings.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5bsac6DZ8pp-2YQqMuGATbtmDxw1QyWlsgJm6HxgZzw&s=10",
+            "membership": 1
         }
     ]
 }

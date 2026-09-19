@@ -11,7 +11,6 @@
     header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         background-color: var(--primary-color);
 
 
@@ -34,17 +33,16 @@
     }
 
 
-
-
-
-
     .hamburger {
         display: none;
 
     }
 
     .navigation {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
     }
 
     .navigation a {
@@ -52,9 +50,14 @@
         color: black;
     }
 
-    .navigation ul {
-        display: flex;
+    .navigation li {
+        list-style: none;
+        display: inline-block;
     }
+
+ 
+
+
 
     footer {
         display: grid;
@@ -73,6 +76,27 @@
     .right {
         grid-column: 3/4;
     }
+
+    .current-events {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+
+    .event {
+        grid-column: 1/2;
+        margin-right: 5px;
+
+    }
+
+    .fair {
+        grid-column: 2/3;
+        margin-left: 5px;
+    }
+
+    .current-events h2 {
+        grid-column: 1/4;
+    }
+
 
 
 }

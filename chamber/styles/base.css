@@ -5,11 +5,6 @@
      font-family: "Libertinus Serif", serif;
  }
 
-
-
-
-
-
  #cards.grid {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -76,9 +71,9 @@
 
  .navigation {
      display: none;
-
-
  }
+
+
 
  .navigation.show {
      display: block;
@@ -117,7 +112,7 @@
 
  header div {
      display: flex;
-    
+
      gap: 5px;
      align-items: center;
  }
@@ -130,7 +125,6 @@
      font-size: 1.2rem;
      color: black;
  }
-
 
 
  .button {
@@ -173,6 +167,56 @@
 
  }
 
- .current a {
-     text-decoration: underline;
+
+ .hero {
+     position: relative;
+ }
+
+ .hero img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ .hero-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     border: 1px solid #A9A6BF;
+     border-radius: 10px;
+     background-color: var(--accent-color);
+ }
+
+ .cta {
+     display: inline-block;
+     padding: 12px 14px;
+     text-decoration: none;
+     border-radius: 5px;
+ }
+
+ .cta:hover {
+     background-color: #ccc;
+     border-radius: 20px;
+ }
+
+ .current-events {
+     display: grid;
+     text-align: center;
+
+ }
+
+ article {
+     border: #A9A6BF 1px solid;
+     border-radius: 20px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ #cards.default {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+     gap: 20px;
+     text-align: center;
  }

@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <link rel="icon" href="favicon.ico">
-    <meta name="description" content="Chamber of Commerece directory page. Able to work on this with a group!">
+    <meta name="description" content="Chamber of Commerece homepage page. Able to work on this with a group!">
     <meta property="og:url" content="https://baileyjensen.github.io/wdd231/chamber/directory.html">
-    <meta property="og:title" content="Chamber directory">
+    <meta property="og:title" content="Chamber Homepage">
     <meta property="og:description"
-        content="A directory for the Chamber of Commerece. Able to practice this with a group!">
+        content="A directory for the Chamber of Commerece Homepage. Able to practice this with a group!">
     <meta property="og:image" content="https://baileyjensen.github.io/wdd231/chamber/images/chamber.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,13 +49,54 @@
 
 
     <main>
-        <h1>Directory</h1>
-        <div class="button">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="cards" class="default"></div>
+        <section class="hero">
+            <img src="images/hero.webp" alt="Flower Hero Image">
 
+            <div class="hero-text">
+                <h1>Lehi Chamber of Commerece</h1>
+                <p>Supporting buisnesses and our community</p>
+
+                <a href="join.html" class="cta">Join Now!</a>
+
+
+            </div>
+
+        </section>
+
+        <section class="current-events">
+            <h2>Current Events</h2>
+
+            <article class="event">
+                <h3>Buisness Networking event</h3>
+                <p>On September 30, 2026 there is a networking event.</p>
+                <p> Come meet executives from Apple, Google, and Microsoft!</p>
+                <p> Free event!</p>
+            </article>
+
+            <article class="fair">
+                <h3>Community Buisness Fair</h3>
+                <p>Explore local buisnesses to help support the community!</p>
+                <p>October 25, 2026</p>
+                <p>Location: Community Library</p>
+
+            </article>
+
+
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="temp">
+                <p id="description"></p>
+            </div>
+
+            <div class="forecast">
+                <h3>3 Day Forecast</h3>
+                <div id="forecast"></div>
+            </div>
+
+
+        </section>
     </main>
 
     <footer>
