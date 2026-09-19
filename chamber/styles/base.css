@@ -3,6 +3,7 @@
      --accent-color: #B5A6BF;
      --secondary-color: #A9A6BF;
      font-family: "Libertinus Serif", serif;
+     box-sizing: border-box;
  }
 
  #cards.grid {
@@ -218,5 +219,35 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
      gap: 20px;
+     text-align: center;
+ }
+
+
+
+ .weather {
+     display: grid;
+     text-align: center;
+ }
+
+ .weather h2,
+ .forecast h3,
+ #spotlights h3 {
+     background-color: var(--accent-color);
+     border-radius: 10px;
+     padding: 20px;
+ }
+
+ .temp,
+ #description,
+ #forecast,
+ #spotlightCards section {
+     border: #A9A6BF 1px solid;
+     border-radius: 20px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ #spotlights {
+     display: grid;
      text-align: center;
  }
