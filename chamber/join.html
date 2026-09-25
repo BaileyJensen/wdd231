@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerace Directory</title>
+    <title>Join the Chamber of Commerace </title>
     <meta name="author" content="Bailey Jensen">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -55,22 +55,25 @@
         <form method="get" action="thankyou.html">
             <h1 class="formH">Membership Form</h1>
             <label for="firstname">First Name: </label>
-            <input type="text" id="firstname" name="firstName" autocomplete="given-name">
+            <input type="text" id="firstname" name="firstName" autocomplete="given-name" title="firstName" required>
             <label for="lastname">Last Name: </label>
-            <input type="text" id="lastname" name="lastName" autocomplete="family-name">
+            <input type="text" id="lastname" name="lastName" autocomplete="family-name" title="lastName" required>
 
             <label for="title">Organization-title</label>
-            <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+            <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}"
+                title="title">
 
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" autocomplete="email" required placeholder="bailey@gmail.com">
+            <input type="email" name="email" id="email" autocomplete="email" required placeholder="bailey@gmail.com"
+                title="email">
 
             <label for="number">Phone Number: </label>
-            <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" placeholder="800-223-2178"
+            <input type="tel" name="number" title="Mobile Phone Number" autocomplete="tel" placeholder="800-223-2178"
                 required>
 
             <label for="businessName">Business Name</label>
-            <input type="text" name="businessName" title="Buisness Name" autocomplete="organization" required>
+            <input type="text" name="businessName" id="businessName" title="Buisness Name" autocomplete="organization"
+                required>
 
 
             <label>Membership Level</label>
@@ -87,7 +90,7 @@
 
             <input type="hidden" name="timestamp" id="timestamp">
 
-            <button class="signUp">Sign me up!</button>
+            <button type="submit" class="signUp">Sign me up!</button>
         </form>
 
         <section>
