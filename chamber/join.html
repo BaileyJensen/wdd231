@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerace Directory</title>
+    <meta name="author" content="Bailey Jensen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Chamber of Commerece directory page. Able to work on this with a group!">
+    <meta property="og:url" content="https://baileyjensen.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Chamber directory">
+    <meta property="og:description"
+        content="A directory for the Chamber of Commerece. Able to practice this with a group!">
+    <meta property="og:image" content="https://baileyjensen.github.io/wdd231/chamber/images/chamber.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/flower1.svg" alt="site logo" width="16" height="16">
+            <span> Lehi Chamber of Commerace </span>
+        </div>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <form method="get" action="thankyou.html">
+            <h1 class="formH">Membership Form</h1>
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstName" autocomplete="given-name">
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastName" autocomplete="family-name">
+
+            <label for="title">Organization-title</label>
+            <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" autocomplete="email" required placeholder="bailey@gmail.com">
+
+            <label for="number">Phone Number: </label>
+            <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" placeholder="800-223-2178"
+                required>
+
+            <label for="businessName">Business Name</label>
+            <input type="text" name="buisnessName" title="Buisness Name" autocomplete="organization" required>
+
+
+            <label>Membership Level</label>
+            <select name="membership" required>
+                <option value="" disabled selected>Select a membership level</option>
+                <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business Description</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button class="signUp">Sign me up!</button>
+        </form>
+
+        <section>
+            <h2 class="formH">Membership Pricing</h2>
+
+            <button id="npButton">NP Membership</button>
+            <dialog id="npModal" class="npModal">
+                <h2>Non-Profit Membership</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>Mayor certification</p>
+                <p>Advertisment space on the float in parade</p>
+                <p><strong>Cost: Free</strong></p>
+                <button id="closeNp">Close</button>
+            </dialog>
+
+            <button id="bronzeButton">Bronze Membership</button>
+            <dialog id="bronzeModal" class="bronzeModal">
+                <h2>Bronze Membership</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>12x12 poster hung up in the highschool</p>
+                <p>Half off a parade float entry</p>
+                <p>Ad space on the parade float</p>
+                <p>Mayor certification</p>
+                <p><strong>Cost: $30 annually</strong></p>
+                <button id="closeB">Close</button>
+            </dialog>
+
+            <button id="silverButton">Silver Membership</button>
+            <dialog id="silverModal" class="silverModal">
+                <h2>Silver Membership</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>Lunch with the mayor</p>
+                <p>12x12 poster hung up in the highschool</p>
+                <p>Half off a parade float entry</p>
+                <p>Ad space on the parade float</p>
+                <p>Mayor certification</p>
+                <p><strong>Cost: $50 annually</strong></p>
+                <button id="closeS">Close</button>
+            </dialog>
+
+            <button id="goldButton">Gold Membership</button>
+            <dialog id="goldModal" class="goldModal">
+                <h2>Gold Membership</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>Home page spotlight</p>
+                <p>Invite to Presidents dinner</p>
+                <p>Lunch with the mayor</p>
+                <p>12x12 poster hung up in the highschool</p>
+                <p>Half off a parade float entry</p>
+                <p>Ad space on the parade float</p>
+                <p>Mayor certification</p>
+                <p><strong>Cost: $100 annually</strong></p>
+                <button id="closeG">Close</button>
+            </dialog>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="left">
+            <p><strong>Lehi Chamber of Commerace</strong></p>
+            <p>3950 N Center St, Lehi, UT 84043</p>
+            <p>lehi@gmail.com</p>
+            <p>(801) 341-1860</p>
+        </section>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="16" height="16">
+            </a>
+
+            <a href="https://www.youtube.com/@baileylately/videos" target="_blank">
+                <img src="images/youtube.svg" alt="youtube" width="16" height="16">
+            </a>
+
+            <a href="https://www.instagram.com/baileyylately?utm_source=qr" target="_blank">
+                <img src="images/instagram.svg" alt="instagram" width="16" height="16">
+            </a>
+        </div>
+
+        <section class="right">
+            <p>© <span id="currentyear"></span> Lehi Chamber of Commerace</p>
+            <p>Bailey Jensen</p>
+            <span id="lastModified"></span>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

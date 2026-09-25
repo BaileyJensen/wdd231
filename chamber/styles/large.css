@@ -132,6 +132,21 @@
         gap: 20px;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin-right: 5px;
+    }
+
+    .formH {
+        margin-left: 5px;
+    }
+
+
+
 
 
 }

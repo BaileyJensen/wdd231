@@ -87,8 +87,16 @@ allButton.addEventListener("click", () => {
     courseList.textContent = "";
     let totalCredits = 0;
 
+
+
     for (let i = 0; i < courses.length; i++) {
         const course = document.createElement("p")
+
+        course.addEventListener('click', () => {
+            displayCourseDetails(courses[i]);
+        });
+
+
         totalCredits += courses[i].credits;
         course.textContent = `${courses[i].subject} ${courses[i].number}`;
 
@@ -114,6 +122,10 @@ wddButton.addEventListener("click", () => {
     for (let i = 0; i < courses.length; i++) {
         if (courses[i].subject === "WDD") {
             const course = document.createElement("p");
+
+            course.addEventListener('click', () => {
+                displayCourseDetails(courses[i]);
+            });
             totalCredits += courses[i].credits;
             course.textContent = `${courses[i].subject} ${courses[i].number}\n`;
 
@@ -141,6 +153,10 @@ cseButton.addEventListener("click", () => {
     for (let i = 0; i < courses.length; i++) {
         if (courses[i].subject === "CSE") {
             const course = document.createElement("p")
+
+            course.addEventListener('click', () => {
+                displayCourseDetails(courses[i]);
+            });
             totalCredits += courses[i].credits;
             course.textContent = `${courses[i].subject} ${courses[i].number}\n`;
             if (courses[i].completed) {
@@ -156,6 +172,34 @@ cseButton.addEventListener("click", () => {
 
 
 });
+
+
+const modal = document.querySelector("#myModal");
+
+
+
+
+function displayCourseDetails(course) {
+    modal.innerHTML = '';
+    modal.innerHTML = `
+    <button id="close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    modal.showModal();
+
+    const close = modal.querySelector("#close");
+
+
+    close.addEventListener("click", () => {
+        modal.close();
+    });
+}
+
 
 
 

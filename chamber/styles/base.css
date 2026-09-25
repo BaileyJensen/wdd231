@@ -251,3 +251,135 @@
      display: grid;
      text-align: center;
  }
+
+ @keyframes fadeNP {
+     0% {
+         background-color: purple;
+     }
+
+     100% {
+         background-color: #FCE5FC;
+     }
+ }
+
+ .npModal {
+     animation: fadeNP 5s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes fadeG {
+     0% {
+         background-color: #926C15;
+     }
+
+     100% {
+         background-color: #FFE169;
+     }
+ }
+
+ .goldModal {
+     animation: fadeG 5s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes fadeB {
+     0% {
+         background-color: #7E4B0F;
+     }
+
+     100% {
+         background-color: #F1C896;
+     }
+ }
+
+ .bronzeModal {
+     animation: fadeB 5s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes fadeS {
+     0% {
+         background-color: #ababab;
+     }
+
+     100% {
+         background-color: #ececec;
+     }
+ }
+
+ .silverModal {
+     animation: fadeS 5s;
+     animation-iteration-count: infinite;
+ }
+
+ form {
+     display: grid;
+     gap: 10px;
+     padding: 10px;
+     border: 2px solid #BFA6BD;
+     border-radius: 10px;
+     background-color: #BFA6BD;
+     margin-top: 20px;
+
+ }
+
+ input,
+ select {
+     height: 44px;
+     border: 1px solid black;
+     background-color: #FCE5FC;
+ }
+
+ input:required {
+     border-left: 2px solid red;
+ }
+
+ textarea {
+     background-color: #FCE5FC;
+ }
+
+ label {
+     margin-bottom: -5px;
+ }
+
+ .signUp {
+     background-color: #FCE5FC;
+     height: 44px;
+ }
+
+ .formH {
+     background-color: #BFA6BD;
+     padding: 10px;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+
+ #silverButton,
+ #npButton,
+ #bronzeButton,
+ #goldButton {
+     display: block;
+     margin-bottom: 10px;
+     margin-left: auto;
+     margin-right: auto;
+     gap: 10px;
+     height: 44px;
+     border: 1px solid black;
+     background-color: #FCE5FC;
+     border-radius: 10px;
+ }
+
+ #silverButton:hover,
+ #npButton:hover,
+ #bronzeButton:hover,
+ #goldButton:hover,
+ .signUp:hover {
+     background-color: #ababab;
+ }
+
+ input:hover,
+ select:hover,
+ textarea:hover {
+     background-color: #ababab;
+ }

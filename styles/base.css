@@ -173,3 +173,24 @@ section {
 #courseList p.completed {
     background-color: #B68BEE;
 }
+
+#myModal {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
