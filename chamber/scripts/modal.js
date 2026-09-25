@@ -74,3 +74,5 @@ gMembership.addEventListener("click", (event) => {
 
 
 });
+
+document.querySelector("#timestamp").value = new Date();

@@ -10,12 +10,13 @@ const memberLevel = params.get("membership");
 const description = params.get("description");
 const timestamp = params.get("timestamp");
 
+
 document.querySelector("#displayFirstName").textContent = firstName;
 document.querySelector("#displayLastName").textContent = lastName;
 document.querySelector("#displayTitle").textContent = title;
 document.querySelector("#displayEmail").textContent = email;
 document.querySelector("#displayPhone").textContent = number;
-document.querySelector("#displayBuisnessName").textContent = businessName;
+document.querySelector("#displayBusinessName").textContent = businessName;
 document.querySelector("#displayMembership").textContent = memberLevel;
 document.querySelector("#displayDescription").textContent = description;
 document.querySelector("#displayTimestamp").textContent = timestamp;
