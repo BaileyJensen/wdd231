@@ -1,0 +1,24 @@
+* {
+    font-family: "Unkempt", cursive;
+    --primary-color: #E5D9B8;
+    --secondary-color: #FFFCF2;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+}
+
+main {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.faq {
+    grid-column: 2/3;
+}
+
+.site {
+    grid-column: 1/2;
+}
