@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1025px) {
 
     header,
     main,
@@ -132,7 +132,7 @@
         gap: 20px;
     }
 
-    main {
+    .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -145,6 +145,18 @@
         margin-left: 5px;
     }
 
+    #iCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #iCards section img {
+        transition: transform 0.3 ease;
+    }
+
+    #iCards section img:hover {
+        transform: scale(1.05);
+    }
 
 
 

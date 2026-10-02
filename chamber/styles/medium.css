@@ -1,0 +1,17 @@
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+
+    #iCards section {
+
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address"
+            "button button";
+
+
+    }
+
+    #iCards section figure {
+        grid-area: image;
+    }
+}
