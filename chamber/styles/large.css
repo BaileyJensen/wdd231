@@ -150,9 +150,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #iCards section img {
-        transition: transform 0.3 ease;
-    }
+
 
     #iCards section img:hover {
         transform: scale(1.05);
