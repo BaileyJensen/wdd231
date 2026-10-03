@@ -262,7 +262,7 @@
      }
  }
 
- .npModal {
+ #npButton {
      animation: fadeNP 5s;
      animation-iteration-count: infinite;
  }
@@ -277,7 +277,7 @@
      }
  }
 
- .goldModal {
+ #goldButton {
      animation: fadeG 5s;
      animation-iteration-count: infinite;
  }
@@ -292,7 +292,7 @@
      }
  }
 
- .bronzeModal {
+ #bronzeButton {
      animation: fadeB 5s;
      animation-iteration-count: infinite;
  }
@@ -307,7 +307,7 @@
      }
  }
 
- .silverModal {
+ #silverButton {
      animation: fadeS 5s;
      animation-iteration-count: infinite;
  }
