@@ -203,6 +203,9 @@ h1 {
     height: auto;
     align-self: center;
     justify-self: center;
+    background-color: #CFC4A8;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .faq,
@@ -213,11 +216,3 @@ h1 {
     background-color: #CFC4A8;
 
 }
-
-.profile {
-    background-color: #CFC4A8;
-    padding: 2rem;
-    border-radius: 10px;
-
-}
-
