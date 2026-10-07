@@ -1,0 +1,96 @@
+@media only screen and (min-width: 1025px) {
+
+
+    /* ---------- header and footer ---------- */
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: var(--primary-color);
+
+
+    }
+
+    header span {
+        color: black;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 20px;
+
+    }
+
+    header nav {
+        margin-left: auto;
+    }
+
+
+    .hamburger {
+        display: none;
+
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .navigation a {
+        border: none;
+        color: black;
+    }
+
+    .navigation li {
+        list-style: none;
+        display: inline-block;
+    }
+
+
+
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px;
+    }
+
+    /* ---------- Homepage ---------- */
+
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .intro {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+   
+
+    .profile:hover {
+        transform: scale(1.05);
+    }
+
+    .card a {
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    .card a:hover {
+        transform: scale(1.05);
+        background-color: #fff;
+    }
+
+
+}

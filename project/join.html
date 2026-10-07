@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey Latley Join Page </title>
+    <meta name="author" content="Bailey Jensen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Final Project Join page. Sign up for our program to have you videos reviewed.">
+    <meta property="og:url" content="https://baileyjensen.github.io/wdd231/project/join.html">
+    <meta property="og:title" content="Bailey Lately Join Page">
+    <meta property="og:description" content="Sign up for our program to have you videos reviewed.">
+    <meta property="og:image" content="https://baileyjensen.github.io/wdd231/project/images/baileyLately.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="images/flower1.svg" alt="site logo" width="16" height="16">
+            <span> Bailey Lately Consulting </span>
+        </div>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="video.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form method="get" action="thankyou.html">
+            <h1 class="formH">Sign up to have you video reviewed!</h1>
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstName" autocomplete="given-name" title="firstName" required>
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastName" autocomplete="family-name" title="lastName" required>
+
+            <label for="title">Video Title</label>
+            <input type="text" name="title" id="title" title="title">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" autocomplete="email" required placeholder="bailey@gmail.com"
+                title="email">
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="phone" title="Mobile Phone Number" autocomplete="tel"
+                placeholder="800-223-2178" required>
+
+
+
+            <label for="category">Video Category:</label>
+            <select name="category" id="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="health">Health & Wellness</option>
+                <option value="sports">Sports</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="edit">Fan Edit</option>
+            </select>
+
+            <label for="description">Video Description</label>
+            <textarea id="description" name="description" title="Buisnessdecription"></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit" class="signUp">Get my video reviewed!</button>
+        </form>
+
+        <section>
+            <h2 class="formH">Video Pricing</h2>
+
+            <button id="oneBtn">One Video</button>
+            <dialog id="oneModal" class="oneModal">
+                <h2>One Video</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>Inspect 1 video</p>
+                <p>Grade A-F based on preformance </p>
+                <p>Get hook ideas  </p>
+                <p><strong>Cost: $6</strong></p>
+                <button id="closeOne">Close</button>
+            </dialog>
+
+            <button id="twoBtn">Two videos</button>
+            <dialog id="twoModal" class="twoModal">
+                <h2>Two Video Price</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>2 videos reviewed</p>
+                <p>Grade A-F based on preformance</p>
+                <p>Get 2 hooks for video</p>
+                <p>Re-edit video</p>
+                <p><strong>Cost: $11</strong></p>
+                <button id="closeTwo">Close</button>
+            </dialog>
+
+            <button id="monthBtn">Monthly videos</button>
+            <dialog id="goldModal" class="goldModal">
+                <h2>Monthly Video Reviews</h2>
+                <p><strong>Benefits include: </strong></p>
+                <p>Up to 10 video reviews</p>
+                <p>Grade A-F based on preformance</p>
+                <p>Get 8 hooks for video</p>
+                <p>Re-edit 4 videos when needed</p>
+                <p>Provided effecttive hashtags</p>
+                <p>Provided Thumbnail</p>
+                <p><strong>Cost: $60 Monthly</strong></p>
+                <button id="closeMonthly">Close</button>
+            </dialog>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="left">
+            <p><strong>Bailey Latley Consulting</strong></p>
+            <p>3950 N Center St, Lehi, UT 84043</p>
+            <p>bailey@gmail.com</p>
+            <p>(801) 341-1860</p>
+        </section>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin sign in page" width="16" height="16">
+            </a>
+
+            <a href="https://www.youtube.com/@baileylately/videos" target="_blank">
+                <img src="images/youtube.svg" alt="youtube profile link" width="16" height="16">
+            </a>
+
+            <a href="https://www.instagram.com/baileyylately?utm_source=qr" target="_blank">
+                <img src="images/instagram.svg" alt="instagram profile link" width="16" height="16">
+            </a>
+        </div>
+
+        <section class="right">
+            <p>© <span id="currentyear"></span> Bailey Lately Consulting</p>
+            <p>Bailey Jensen</p>
+            <span id="lastModified"></span>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

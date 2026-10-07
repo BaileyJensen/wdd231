@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey Latley Video Page </title>
+    <meta name="author" content="Bailey Jensen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/cards.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/button.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Video page. See our expirence with videos!">
+    <meta property="og:url" content="https://baileyjensen.github.io/wdd231/project/videos.html">
+    <meta property="og:title" content="Bailey Lately Video Page">
+    <meta property="og:description" content="See our expirence with videos! We can help you too!">
+    <meta property="og:image" content="https://baileyjensen.github.io/wdd231/project/images/baileyLately.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="images/flower1.svg" alt="site logo" width="16" height="16">
+            <span> Bailey Lately Consulting </span>
+        </div>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Our Expirence</h1>
+        <div class="button">
+            <button id="views">Sort by views </button>
+            <button id="likes">Sort by likes</button>
+        </div>
+        <div id="cards" class="card"></div>
+
+    </main>
+
+    <footer>
+        <section class="left">
+            <p><strong>Bailey Latley Consulting</strong></p>
+            <p>3950 N Center St, Lehi, UT 84043</p>
+            <p>bailey@gmail.com</p>
+            <p>(801) 341-1860</p>
+        </section>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin sign in page" width="16" height="16">
+            </a>
+
+            <a href="https://www.youtube.com/@baileylately/videos" target="_blank">
+                <img src="images/youtube.svg" alt="youtube profile link" width="16" height="16">
+            </a>
+
+            <a href="https://www.instagram.com/baileyylately?utm_source=qr" target="_blank">
+                <img src="images/instagram.svg" alt="instagram profile link" width="16" height="16">
+            </a>
+        </div>
+
+        <section class="right">
+            <p>© <span id="currentyear"></span> Bailey Lately Consulting</p>
+            <p>Bailey Jensen</p>
+            <span id="lastModified"></span>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
