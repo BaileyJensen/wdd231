@@ -1,0 +1,18 @@
+[
+    {
+        "value": "health",
+        "name": "Health & Wellness"
+    },
+    {
+        "value": "sports",
+        "name": "Sports"
+    },
+    {
+        "value": "lifestyle",
+        "name": "Lifestyle Video"
+    },
+    {
+        "value": "edit",
+        "name": "Fan Edit"
+    }
+]

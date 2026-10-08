@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/form.js" type="module"></script>
+    <script src="scripts/thankyou.js" type="module"></script>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="Final Project Join page. Sign up for our program to have you videos reviewed.">
     <meta property="og:url" content="https://baileyjensen.github.io/wdd231/project/join.html">
@@ -35,14 +38,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="join.html">Join</a></li>
-                <li><a href="video.html">Videos</a></li>
+                <li><a href="videos.html">Videos</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <form method="get" action="thankyou.html">
-            <h1 class="formH">Sign up to have you video reviewed!</h1>
+        <form class="form" method="get" action="thankyou.html">
+            <h1>Sign up to have you video reviewed!</h1>
             <label for="firstname">First Name: </label>
             <input type="text" id="firstname" name="firstName" autocomplete="given-name" title="firstName" required>
             <label for="lastname">Last Name: </label>
@@ -69,16 +72,30 @@
                 <option value="lifestyle">Lifestyle</option>
                 <option value="edit">Fan Edit</option>
             </select>
+            <p id="categoryMessage"></p>
+
+            <label for="membership">Membership</label>
+            <select name="membership" id="membership" required>
+                <option value="" disabled selected>Select a Membership</option>
+                <option value="oneVideo ">One Video</option>
+                <option value="twoVideo">Two Video</option>
+                <option value="monthly">Monthly</option>
+
+            </select>
+
+
+            <label for="video">Upload Video:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
 
             <label for="description">Video Description</label>
-            <textarea id="description" name="description" title="Buisnessdecription"></textarea>
+            <textarea id="description" name="description" title="description"></textarea>
 
             <input type="hidden" name="timestamp" id="timestamp">
 
-            <button type="submit" class="signUp">Get my video reviewed!</button>
+            <button type="submit" class="submit">Get my video reviewed!</button>
         </form>
 
-        <section>
+        <section class="price">
             <h2 class="formH">Video Pricing</h2>
 
             <button id="oneBtn">One Video</button>
@@ -87,7 +104,7 @@
                 <p><strong>Benefits include: </strong></p>
                 <p>Inspect 1 video</p>
                 <p>Grade A-F based on preformance </p>
-                <p>Get hook ideas  </p>
+                <p>Get hook ideas </p>
                 <p><strong>Cost: $6</strong></p>
                 <button id="closeOne">Close</button>
             </dialog>
@@ -105,7 +122,7 @@
             </dialog>
 
             <button id="monthBtn">Monthly videos</button>
-            <dialog id="goldModal" class="goldModal">
+            <dialog id="monthModal" class="monthModal">
                 <h2>Monthly Video Reviews</h2>
                 <p><strong>Benefits include: </strong></p>
                 <p>Up to 10 video reviews</p>

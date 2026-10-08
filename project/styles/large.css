@@ -76,7 +76,7 @@
         grid-row: 1/2;
     }
 
-   
+
 
     .profile:hover {
         transform: scale(1.05);
@@ -91,6 +91,23 @@
         transform: scale(1.05);
         background-color: #fff;
     }
+
+    /* -------- Form -------- */
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        margin-right: 10px;
+    }
+
+    .price {
+        margin-left: 10px;
+    }
+
+
 
 
 }
