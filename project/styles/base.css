@@ -20,6 +20,7 @@ footer {
     justify-self: end;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 44px;
 }
 
 .hamburger::before {
@@ -199,8 +200,9 @@ h1 {
 }
 
 .profile {
-    width: 400px;
+    max-width: 400px;
     height: auto;
+    width: 100%;
     align-self: center;
     justify-self: center;
     background-color: #CFC4A8;
@@ -250,7 +252,7 @@ textarea {
 }
 
 label {
-    margin-bottom: 0.25;
+    margin-bottom: 0.25rem;
     font-weight: bold;
 
 }
